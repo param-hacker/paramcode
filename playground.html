@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages Playground</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .language-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        .language-list li {
+            margin-bottom: 10px;
+        }
+        .language-list a {
+            text-decoration: none;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+        }
+        .language-list a:hover {
+            background-color: #e0e0e0;
+        }
+
+
+        
+        /* the fancy button */
+        .shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.shadow__btn {
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
+/* background*/
+    </style>
+</head>
+<body>
+    <h1>Programming Languages Playground</h1>
+    <ul class="language-list">
+        <li><a href="https://cpp.sh/"><button class="shadow__btn">
+            C++
+        </button></a></li>
+        <li><a href="https://onecompiler.com/python"><button class="shadow__btn">
+            Python
+        </button></a></li>
+        <li><a href="https://www.mycompiler.io/new/perl"><button class="shadow__btn">
+            Perl
+        </button></a></li>
+        <li><a href="https://scratch.mit.edu/"><button class="shadow__btn">
+            Scratch
+        </button></a></li>
+        <li><a href="https://playcode.io/javascript"><button class="shadow__btn">
+            Javascript
+        </button></a></li>
+    </ul>
+</body>
+</html>

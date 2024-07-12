@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333333; /* Dark gray text */
+            background: linear-gradient(135deg, #00b4db, #0083B0, #6A65D8); /* Gradient background */
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+        h1, h2 {
+            font-family: 'Comic Sans MS', cursive; /* Comic Sans MS font for headings */
+            color: #333333; /* Dark gray text */
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .highlight {
+            font-weight: bold;
+         }
+     /*button of param*/
+
+     /* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgb(65, 205, 230);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Programming Languages Overview</h1>
+
+        <a href="ebooks.html"><button class="button" data-text="Awesome">
+            <span class="actual-text">&nbsp;Ebooks&nbsp;</span>
+            <span aria-hidden="true" class="hover-text">&nbsp;Ebooks&nbsp;</span>
+        </button></a>
+        
+        <h2>C</h2>
+        <p><span class="highlight">Developed By:</span> Dennis Ritchie at Bell Labs in the early 1970s.</p>
+        <p><span class="highlight">Features:</span> Low-level language, direct memory access, efficient for system-level programming, simple syntax, procedural paradigm.</p>
+        
+        <h2>C++</h2>
+        <p><span class="highlight">Developed By:</span> Bjarne Stroustrup in the early 1980s as an extension of C.</p>
+        <p><span class="highlight">Features:</span> Combines procedural and object-oriented programming, supports classes and inheritance, STL for data structures and algorithms, suitable for large-scale software, backward compatible with C.</p>
+        
+        <h2>Perl</h2>
+        <p><span class="highlight">Developed By:</span> Larry Wall in 1987.</p>
+        <p><span class="highlight">Features:</span> High-level language, designed for text processing, supports procedural, object-oriented, and functional programming paradigms, powerful regular expression support.</p>
+        
+        <h2>Scratch</h2>
+        <p><span class="highlight">Developed By:</span> Lifelong Kindergarten Group at the MIT Media Lab.</p>
+        <p><span class="highlight">Features:</span> Visual programming language, block-based programming, aimed at children and beginners.</p>
+    </div>
+</body>
+</html>
